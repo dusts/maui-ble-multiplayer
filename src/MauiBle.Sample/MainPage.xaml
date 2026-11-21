@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBle.Sample.MainPage"
+             Title="BLE Lobby">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="12">
+            <Label Text="One host, many guests"
+                   Style="{StaticResource Headline}"
+                   SemanticProperties.HeadingLevel="Level1" />
+            <Label Text="Open this page, then host or scan. Android can host. A seat is taken only after hello." />
+
+            <Entry x:Name="NameEntry" Placeholder="Your name" Text="Player" />
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="Host" Clicked="OnHostClicked" />
+                <Button Text="Scan" Clicked="OnScanClicked" />
+                <Button Text="Stop" Clicked="OnStopClicked" />
+            </HorizontalStackLayout>
+
+            <Label x:Name="StatusLabel" Text="Idle" />
+            <Label Text="Nearby hosts" FontAttributes="Bold" />
+            <VerticalStackLayout x:Name="HostButtons" Spacing="8" />
+
+            <Label Text="Roster" FontAttributes="Bold" />
+            <Label x:Name="RosterLabel" Text="No one seated yet." />
+
+            <Entry x:Name="ChatEntry" Placeholder="Say something" />
+            <Button Text="Send" Clicked="OnSendClicked" />
+            <Label x:Name="LogLabel" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

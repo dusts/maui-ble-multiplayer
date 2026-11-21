@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MauiBle.Core/MauiBle.Core.csproj" />
+    <Project Path="src/MauiBle.Sample/MauiBle.Sample.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MauiBle.Core.Tests/MauiBle.Core.Tests.csproj" />
+  </Folder>
+</Solution>
